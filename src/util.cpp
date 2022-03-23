@@ -1,7 +1,7 @@
 #include <iostream>
-#include <common.h>
+#include "common.h"
 
-void debugPrint(char* message) {
+void debugPrint(const char* message) {
     if (DEBUG) {
         std::cout << message << std::endl;
     }

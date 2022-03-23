@@ -18,5 +18,5 @@ char* getClipboardText() {
         debugPrint("Unable to open Clipboard");
     }
     CloseClipboard();
-    return nullptr_t;
+    return nullptr;
 }
