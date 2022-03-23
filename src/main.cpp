@@ -2,6 +2,7 @@
 #include <Windows.h>
 #include <fstream>
 #include "clipboardUtil.cpp"
+#include <time.h>
 
 void writeTextFile(char* content, char* path) {
     std::ofstream out;
@@ -13,7 +14,24 @@ void writeTextFile(char* content, char* path) {
 
 int main(int argc, char* argv[]) {
     std::string path = argv[1];
-    path.append("/clipboard.txt");
+    
+    // Get time string
+    time_t currentTime;
+    time (&currentTime);
+    std::string timestr = ctime(&currentTime);
+    int length = timestr.length();
+    // Replace ':' with '-' and ' ' with '_'
+    for (int i = 0; i < length; i++) {
+        if (timestr[i] == ':') {
+            timestr[i] = '-';
+        } else if (timestr[i] == ' ') {
+            timestr[i] = '_';
+        }
+    }
+
+    path.append("/clipboard_");
+    path.append(timestr.substr(4, length - 5));
+    path.append(".txt");
     debugPrint(path.c_str());
     writeTextFile(
         getClipboardText(), 
