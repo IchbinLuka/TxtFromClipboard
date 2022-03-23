@@ -1,6 +1,6 @@
 #include <iostream>
 #include <Windows.h>
-#include <util.cpp>
+#include "util.cpp"
 
 char* getClipboardText() {
     HWND hwnd = GetClipboardOwner();

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <Windows.h>
 #include <fstream>
-#include <clipboardUtil.cpp>
+#include "clipboardUtil.cpp"
 
 int main(int argc, char* argv[]) {
     std::string path = argv[0];
