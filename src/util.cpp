@@ -6,3 +6,7 @@ void debugPrint(const char* message) {
         std::cout << message << std::endl;
     }
 }
+
+inline char getLastChar(std::string s) {
+    return s.at(s.length() - 1);
+}

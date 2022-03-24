@@ -28,8 +28,15 @@ int main(int argc, char* argv[]) {
             timestr[i] = '_';
         }
     }
-
-    path.append("/clipboard_");
+    char last = getLastChar(path);
+    if (last == '"') {
+        path = path.substr(0, path.length() - 1);
+        last = getLastChar(path);
+    }
+    if (last != '/' && last != '\\') {
+        path.append("/");
+    }
+    path.append("clipboard_");
     path.append(timestr.substr(4, length - 5));
     path.append(".txt");
     debugPrint(path.c_str());
