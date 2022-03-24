@@ -13,7 +13,7 @@ This tool lets you create .txt files from your clipboard.
 ## Installation
 
 ### With an installer
-1. Download the exe installer from the latest [release](https://github.com/IchbinLuka/TxtFromClipboard)
+1. Download the exe installer from the latest [release](https://github.com/IchbinLuka/TxtFromClipboard/releases/)
 2. Execute the installer and follow the shown steps
 
 ### Build yourself
