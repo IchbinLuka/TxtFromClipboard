@@ -1,1 +1,1 @@
-g++ src/main.cpp -o Output/TxtFromClipboard
+g++ src/main.cpp -o Output/TxtFromClipboard -static-libgcc -static-libstdc++
