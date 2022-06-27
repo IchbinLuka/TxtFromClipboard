@@ -4,10 +4,10 @@
 #include "clipboardUtil.cpp"
 #include <time.h>
 
-void writeTextFile(char* content, char* path) {
+void writeTextFile(std::string content, char* path) {
     std::ofstream out;
-    out.open(path);
-    out.write(content, strlen(content));
+    out.open(path, std::ios_base::binary | std::ios_base::out);
+    out << content;
     out.flush();
     out.close();
 }
