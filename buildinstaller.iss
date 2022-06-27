@@ -28,8 +28,8 @@ WizardStyle=modern
 
 [Registry]
 Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\background\shell\{#ContextMenuCommand}"; ValueType: string; ValueData: "{#ContextMenuCommand}"; Flags: uninsdeletekey
-Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\background\shell\{#ContextMenuCommand}\command"; ValueType: string; ValueData: """{autopf}\{#MyAppName}\{#MyAppExeName}"" ""%V""" ; Flags: uninsdeletekey
-Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\background\shell\{#ContextMenuCommand}"; ValueType: string; ValueName: "Icon"; ValueData: """{autopf}\{#MyAppName}\icon\icon.ico""" ; Flags: uninsdeletekey 
+Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\background\shell\{#ContextMenuCommand}\command"; ValueType: string; ValueData: """{app}\{#MyAppExeName}"" ""%V""" ; Flags: uninsdeletekey
+Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\background\shell\{#ContextMenuCommand}"; ValueType: string; ValueName: "Icon"; ValueData: """{app}\icon\icon.ico""" ; Flags: uninsdeletekey 
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
