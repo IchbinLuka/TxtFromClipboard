@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Create Txt from Clipboard"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.3"
 #define MyAppPublisher "Luka Born"
 #define MyAppExeName "TxtFromClipboard.exe"
 #define ContextMenuCommand "Txt from Clipboard"

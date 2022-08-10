@@ -1,10 +1,10 @@
 #include <iostream>
 #include "common.h"
 
-void debugPrint(const char* message) {
-    if (DEBUG) {
-        std::cout << message << std::endl;
-    }
+inline void debugPrint(const char* message) {
+    #if DEBUG
+    std::cout << message << std::endl;
+    #endif
 }
 
 inline char getLastChar(std::string s) {
